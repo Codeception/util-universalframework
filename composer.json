@@ -18,6 +18,7 @@
         "classmap-authoritative": true
     },
     "require": {
+        "codeception/lib-innerbrowser": "dev-master",
         "symfony/browser-kit": ">=2.7 <5.0"
     }
 }
