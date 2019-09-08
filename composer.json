@@ -19,6 +19,7 @@
     },
     "require": {
         "codeception/lib-innerbrowser": "dev-master",
+        "codeception/codeception": "@dev",
         "symfony/browser-kit": ">=2.7 <5.0"
     }
 }
