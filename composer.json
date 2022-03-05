@@ -1,7 +1,7 @@
 {
     "name":"codeception/util-universalframework",
     "description":"Mock framework module used in internal Codeception tests",
-    "homepage":"http://codeception.com/",
+    "homepage":"https://codeception.com/",
     "type":"library",
     "license":"MIT",
     "authors":[
