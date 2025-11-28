@@ -4,7 +4,7 @@ namespace Codeception\Lib\Connector;
 use Symfony\Component\BrowserKit\AbstractBrowser as Client;
 use Symfony\Component\BrowserKit\Response;
 
-class Universal extends Client
+final class Universal extends Client
 {
     use Shared\PhpSuperGlobalsConverter;
 
@@ -21,7 +21,7 @@ class Universal extends Client
         $this->mockedResponse = $response;
     }
 
-    public function doRequest($request)
+    public function doRequest(object $request): object
     {
         if ($this->mockedResponse) {
             $response = $this->mockedResponse;

@@ -9,6 +9,9 @@
             "name":"Gintautas Miselis"
         }
     ],
+    "require": {
+        "symfony/browser-kit": "^5.2 || ^6.0 || ^7.0 || ^8.0"
+    },
     "minimum-stability": "RC",
 
     "autoload":{
