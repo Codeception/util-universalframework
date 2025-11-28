@@ -21,7 +21,7 @@ class Universal extends Client
         $this->mockedResponse = $response;
     }
 
-    public function doRequest($request)
+    public function doRequest(object $request): object
     {
         if ($this->mockedResponse) {
             $response = $this->mockedResponse;
