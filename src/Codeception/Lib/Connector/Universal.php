@@ -4,7 +4,7 @@ namespace Codeception\Lib\Connector;
 use Symfony\Component\BrowserKit\AbstractBrowser as Client;
 use Symfony\Component\BrowserKit\Response;
 
-class Universal extends Client
+final class Universal extends Client
 {
     use Shared\PhpSuperGlobalsConverter;
 
