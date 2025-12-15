@@ -8,8 +8,8 @@ final class Universal extends Client
 {
     use Shared\PhpSuperGlobalsConverter;
 
-    protected ?object $mockedResponse = null;
-    protected ?string $index = null;
+    private ?object $mockedResponse = null;
+    private string $index = '';
 
     public function setIndex(string $index): void
     {
@@ -46,7 +46,9 @@ final class Universal extends Client
         $_SERVER['REQUEST_URI'] = $uri;
 
         ob_start();
-        include $this->index;
+        if ('' !== $this->index) {
+            include $this->index;
+        }
 
         $content = ob_get_contents();
         ob_end_clean();
