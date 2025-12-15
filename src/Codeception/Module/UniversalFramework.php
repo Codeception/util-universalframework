@@ -8,7 +8,7 @@ use Codeception\Lib\Framework;
 class UniversalFramework extends Framework
 {
 
-    public function _initialize()
+    public function _initialize(): void
     {
         if (isset($this->config['index'])) {
             $index = $this->config['index'];
@@ -19,7 +19,7 @@ class UniversalFramework extends Framework
         $this->client->setIndex($index);
     }
 
-    public function useUniversalFramework()
+    public function useUniversalFramework(): void
     {
 
     }
