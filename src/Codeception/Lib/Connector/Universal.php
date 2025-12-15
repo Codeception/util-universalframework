@@ -8,15 +8,15 @@ final class Universal extends Client
 {
     use Shared\PhpSuperGlobalsConverter;
 
-    protected $mockedResponse;
-    protected $index;
+    protected ?object $mockedResponse = null;
+    protected ?string $index = null;
 
-    public function setIndex($index)
+    public function setIndex(string $index): void
     {
         $this->index = $index;
     }
 
-    public function mockResponse($response)
+    public function mockResponse(object $response): void
     {
         $this->mockedResponse = $response;
     }
